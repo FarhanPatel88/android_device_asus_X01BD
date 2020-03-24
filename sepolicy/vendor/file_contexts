@@ -18,6 +18,9 @@
 # Persist files
 /mnt/vendor/persist/flag(/.*)?                                                u:object_r:persist_region_file:s0
 
+# Dolby
+/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@1\.0-service                     u:object_r:hal_dms_default_exec:s0
+
 # Scripts
 /(vendor|system/vendor)/bin/init\.btmac\.sh                                   u:object_r:init_blutmac_exec:s0
 /(vendor|system/vendor)/bin/init\.country_code\.sh                            u:object_r:qti_init_shell_exec:s0
